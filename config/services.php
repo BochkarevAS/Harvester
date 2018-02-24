@@ -12,5 +12,3 @@ $container['pdo'] = function ($c) {
 $container['harvester'] = function ($c) {
     return new Harvester($c['pdo'], $c['mailer']);
 };
-
-
